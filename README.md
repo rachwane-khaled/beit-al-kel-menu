@@ -1,5 +1,3 @@
-# beit-al-kel-menu
-MENU
 <!DOCTYPE html>
 <html lang="en">
 <head>
