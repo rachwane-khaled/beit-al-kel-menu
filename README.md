@@ -5,39 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEIT AL KEL</title>
 
+
     <style>
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
         body {
-            background-image: url('15639.jpg');
+            background-image: url('doodle-hand-drawing-coffee-beans-background-free-vector.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
             min-height: 100vh;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
         }
 
         h1 {
-            color: white;
+            color: rgb(0, 0, 0);
             text-align: center;
             margin-top: 30px;
-            font-size: 2em;
+            font-size: 50px;
             font-family: Cursive;
         }
 
-        h2, h3, h4, h5, h6 {
+        h2 {
+            color: rgb(255, 255, 255);
+            text-align: left;
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: Cursive;
+            
+        }
+
+        div h2 {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 15px;
+            width: 300px;
+            font-style: oblique;
+            background-color: rgba(128, 72, 0, 0.664);
+
+        }
+
+        h3 {
             color: white;
             text-align: left;
             margin-top: 30px;
-            font-size: 1.2em;
+            font-size: 20px;
             font-family: Cursive;
-            padding-left: 20px;
-            border-left: 5px solid white;
-            width: 80%; /* Adjust width for smaller screens */
+        }
+
+        div h3 {
+            border: 2px solid rgb(0, 0, 0);
             padding: 15px;
+            width: 300px;
+            font-style: oblique;
+            background-color: rgba(128, 72, 0, 0.664);
+        }
+
+        h4 {
+            color: white;
+            text-align: left;
+            margin-top: 30px;
+            font-size: 20px;
+            font-family: Cursive;
+        }
+
+        div h4 {
+            border: 2px solid black;
+            padding: 15px;
+            width: 300px;
+            font-style: oblique;
+            background-color: rgba(128, 72, 0, 0.664);
+            text-shadow: none;
+        }
+
+        /* Shisha Flavors box */
+        h5 {
+            color: white;
+            text-align: left;
+            margin-top: 0;
+            font-size: 20px;
+            font-family: Cursive;
+        }
+
+        div h5 {
+            position: absolute;
+            top: 250px;
+            right: 50px;
+            color: white;
+            border: 2px solid black;
+            padding: 20px;
+            width: 250px;
+            background-color: rgba(128, 72, 0, 0.664);
+            font-style: oblique;
+        }
+
+        h6 {
+            color: white;
+            text-align: left;
+            margin-left: 30px;
+            font-size: 20px;
+            font-family: Cursive;
+        }
+
+        div h6 {
+            position: absolute;
+            top: 650px;
+            right: 50px;
+            color: white;
+            border: 2px solid black;
+            padding: 20px;
+            width: 250px;
+            background-color: rgba(128, 72, 0, 0.664);
+            font-style: oblique;
         }
 
         /* Reusable box style for cocktails & kaakeh */
@@ -45,41 +129,90 @@
             color: white;
             border: 2px solid black;
             padding: 20px;
-            width: 80%; /* Make the boxes responsive */
-            background-color: rgba(243, 229, 229, 0.5);
+            width: 250px;
+            background-color: rgba(128, 72, 0, 0.664);
             font-style: oblique;
             font-family: Cursive;
-            font-size: 1.2em;
-            margin-bottom: 15px;
+            font-size: 20px;
+            right: 50px;
+
         }
 
-        .cocktails, .kaakeh {
-            width: 90%; /* Make boxes responsive */
-            margin: 10px auto;
+        .box .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
+
+        /* Positioning like your other boxes */
+       .cocktails {
+    position: absolute;
+    top: 1350px;
+    left: 1px; /* Move to left side */
+    width: 230px;
+}
+
+.kaakeh {
+    position: absolute;
+    top: 1060px;
+    left: 1px; /* Move to left side */
+    width: 230px;
+}
+
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
+            body {
+                background-attachment: scroll; /* Prevent background fixed issue on mobile */
+            }
+
             h1 {
-                font-size: 1.5em;
+                font-size: 24px;
                 margin-top: 20px;
             }
 
             h2, h3, h4, h5, h6 {
-                font-size: 1em;
-                padding: 10px;
-                width: 100%;
+                font-size: 18px;
+                width: 100%; /* Full-width for smaller screens */
+                padding: 15px;
             }
 
+            div h2, div h3, div h4, div h5, div h6 {
+                width: 100%;
+                padding: 15px;
+                font-size: 16px;
+            }
+
+            /* Stack the items vertically */
             .box {
-                width: 90%;
-                margin: 10px auto;
-                font-size: 1em;
+                width: 90%; /* Make boxes responsive */
+                margin: 10px auto; /* Center them */
+                position: relative;
+                top: auto;
+                right: auto;
+                top: 1000px;
             }
 
-            .cocktails, .kaakeh {
+            .cocktails {
+                top: 1000px; /* Adjust position */
+                right: 10px;
+                top: 1100px;
+                left: 50px; /* move to left side*/
+            }
+
+            .kaakeh {
+                top: 1000px; /* Adjust position */
+                right: 10px;
+
+            }
+
+            div h5, div h6 {
+                position: relative;
+                top: auto;
+                right: auto;
                 width: 100%;
-                margin: 20px auto;
+                padding: 10px;
+                
             }
         }
     </style>
@@ -87,7 +220,7 @@
 <body>
     <h1>
         WELCOME TO <br>MENU <br>
-        BEIT AL KEL
+        BAIT ALKEL
     </h1>
 
     <div>
@@ -179,7 +312,7 @@
         </h6>
     </div>
 
-    <!-- Cocktails box -->
+    <!-- Cocktails box (replaces h7) -->
     <div class="box cocktails">
         <div class="title">COCKTAILS</div>
         <p>
@@ -191,7 +324,7 @@
         </p>
     </div>
 
-    <!-- Kaakeh box -->
+    <!-- Kaakeh box (replaces h8) -->
     <div class="box kaakeh">
         <div class="title">KAAKEH FLAVORS</div>
         <p>
